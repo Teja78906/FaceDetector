@@ -23,16 +23,13 @@ The face detection and recognition system uses the OpenCV library to perform rea
 ## Usage
 
 1. Clone the repository:
-   ``` bash
-   git clone https://github.com/your_username/face-detection-recognition.git
-  
-  ```
+``` bash
+git clone https://github.com/your_username/face-detection-recognition.git
   
 2. Install the required libraries:
- ``` bash
-   pip install opencv-python pillow numpy
-  
-  ```
+
+```bash
+pip install opencv-python pillow numpy
 3. Place your training images in the user_data directory. Each image file should be named with the format "ID.XX.jpg", where ID is the label/ID of the person in the image.
 
 4. Run the faceDetector.py script:
