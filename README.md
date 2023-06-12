@@ -28,7 +28,7 @@ The face detection and recognition system uses the OpenCV library to perform rea
   ```
   
 2. Install the required libraries:
-   ```bash
+ ```bash
    pip install opencv-python pillow numpy
    ```
 3. Place your training images in the user_data directory. Each image file should be named with the format "ID.XX.jpg", where ID is the label/ID of the person in the image.
