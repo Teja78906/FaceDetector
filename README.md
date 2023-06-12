@@ -35,7 +35,7 @@ pip install opencv-python pillow numpy
 ```bash
 python UserDataCapturingUtil.py
 ```
-    this will capture the training data used by the faceDetector algorithm for face detection
+this will capture the training data used by the faceDetector algorithm for face detection
 4. Run the faceDetector.py script:
 ```bash
 python faceDetector.py
