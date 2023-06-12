@@ -26,17 +26,11 @@ def detect(img , faceCascade, img_id):
         roi_img = img[ y:y+h , x:x+w]
         user_id = 1
         generate_dataset(roi_img, user_id, img_id)
-#         roi_img = img[ y:y+h , x:x+w]
-#         coords = draw_boundary(roi_img , eyeCascade , 1.1 , 14, color['red'],"eye")
-#         coords = draw_boundary(roi_img , noseCascade, 1.1 , 5, color['red'],"nose")
-#         coords = draw_boundary(roi_img ,mouthCascade , 1.1 , 20, color['red'],"mouth")
         
     return img
 
 faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
-# eyesCascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_eye.xml")
-# noseCascade = cv2.CascadeClassifier( 'nose.xml')
-# mouthCascade = cv2.CascadeClassifier('mouth.xml')
+
 img_id = 0
 video_capture = cv2.VideoCapture(0)   
 while True:
