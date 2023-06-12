@@ -1,8 +1,11 @@
+# This utility used to capture user data from a videoCapture which will be used to train the face detector algorithm
 import cv2
 
+# storing dataset with unique filenames
 def generate_dataset(img, id, img_id):
     cv2.imwrite("user."+str(id)+"."+str(img_id)+".jpg",img)
     
+# Draw square boundary around detected faces and returns the coordinates     
 def draw_boundary(img , classifier , scale_factor , minNeighbors , color , text):
     gray_img = cv2.cvtColor(img , cv2.COLOR_BGR2GRAY)
     features = classifier.detectMultiScale(gray_img, scale_factor, minNeighbors)
@@ -13,6 +16,7 @@ def draw_boundary(img , classifier , scale_factor , minNeighbors , color , text)
         coords = [x,y,w,h]
     return coords, img
 
+# detecting faces and saving the detected faces
 def detect(img , faceCascade, img_id):
     color = {"blue":(255,0,0), "red":(0,0,255), "green":(0,255,0)}
     coords , img = draw_boundary(img , faceCascade , 1.1 , 10, color['green'], "face")
