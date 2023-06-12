@@ -27,3 +27,19 @@ The face detection and recognition system uses the OpenCV library to perform rea
    ```bash
    git clone https://github.com/your_username/face-detection-recognition.git
 
+2. Install the required libraries:
+
+```bash
+pip install opencv-python pillow numpy
+
+3. Place your training images in the user_data directory. Each image file should be named with the format "ID.XX.jpg", where ID is the label/ID of the person in the image.
+
+4. Run the faceDetector.py script:
+```bash
+python faceDetector.py
+
+5. The script will open the video capture and start detecting and recognizing faces in real-time.
+
+## Customization
+You can adjust the confidence threshold for face recognition by modifying the confidence_threshold parameter in the detect() function.
+Experiment with different preprocessing techniques in the preprocess_image() function to enhance the quality of input images.
