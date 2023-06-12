@@ -23,12 +23,11 @@ The face detection and recognition system uses the OpenCV library to perform rea
 ## Usage
 
 1. Clone the repository:
-
    ```bash
    git clone https://github.com/your_username/face-detection-recognition.git
   ```
+  
 2. Install the required libraries:
-
    ```bash
    pip install opencv-python pillow numpy
    ```
