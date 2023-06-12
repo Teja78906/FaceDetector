@@ -32,14 +32,14 @@ git clone https://github.com/Teja78906/face-detection-recognition.git
 pip install opencv-python pillow numpy
 ```
 3.  Run the UserDataCapturingUtil.py
-     ```bash
-    python UserDataCapturingUtil.py
-    ```
+```bash
+python UserDataCapturingUtil.py
+```
     this will capture the training data used by the faceDetector algorithm for face detection
 4. Run the faceDetector.py script:
-    ```bash
-    python faceDetector.py
-    ```
+```bash
+python faceDetector.py
+```
 5. The script will open the video capture and start detecting and recognizing faces in real-time.
 
 ## Customization
